@@ -476,7 +476,7 @@
             {
               "label": "ART initiation ",
               "type": "obs",
-              "id": "art_initiationn",
+              "id": "art_initiation",
               "questionOptions": {
                 "concept": "6e62bf7e-2107-4d09-b485-6e60cbbb2d08",
                 "rendering": "radio",
@@ -628,7 +628,7 @@
                   "intent":"*",
                   "required":"true",
                   "hide":{
-                    "hideWhenExpression":"art_initiation !== '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && art_initiation !== '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "hideWhenExpression":"(art_initiation !== '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && art_initiation !== '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') || latest_hiv_test_result !== '138571AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
                   }
                 }
               ]
