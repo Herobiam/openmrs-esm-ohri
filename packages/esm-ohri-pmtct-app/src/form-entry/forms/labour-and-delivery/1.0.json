@@ -557,7 +557,11 @@
                 "concept": "164402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
                 "max": "999999999999",
-                "min": "100000000000"
+                "min": "100000000000",
+                "calculate": {
+                  "calculateExpression": "art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? myValue = latest_anc_art_number : ''"
+                }
+
               },
               "behaviours":[
                 {
@@ -737,6 +741,36 @@
                   }
                 }
               ]
+            },
+            {
+              "label": "Latest ANC ART number",
+              "type": "obs",
+              "id": "latest_anc_art_number",
+              "questionOptions": {
+                "concept": "",
+                "rendering": "fixed-value",
+                "calculate": {
+                   "calculateExpression": "resolve(api.getLatestObs(patient.id, '164402AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '2549af50-75c8-4aeb-87ca-4bb2cef6c69a'))?.valueQuantity?.value"
+                }
+              },
+              "hide":{
+                "hideWhenExpression":"true"
+              }
+            },
+            {
+              "label": "Latest ANC ART start date",
+              "type": "obs",
+              "id": "latest_anc_art_start_date",
+              "questionOptions": {
+                "concept": "",
+                "rendering": "fixed-value",
+                "calculate": {
+                   "calculateExpression": "resolve(api.getLatestObs(patient.id, '159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA', '2549af50-75c8-4aeb-87ca-4bb2cef6c69a'))?.valueDateTime"
+                }
+              },
+              "hide":{
+                "hideWhenExpression":"true"
+              }
             }
 
           ]
