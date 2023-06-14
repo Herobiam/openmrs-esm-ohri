@@ -344,13 +344,13 @@
                          "rendering":"radio",
                          "answers":[
                             {
-                               "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                               "label":"No"
-                            },
-                            {
                                "concept":"1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                                "label":"Yes"
                             },
+                            {
+                              "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                              "label":"No"
+                           },
                             {
                                "concept":"54b96458-6585-4c4c-a5b1-b3ca7f1be351",
                                "label":"Missing"
@@ -361,9 +361,6 @@
                         {
                           "intent":"*",
                           "required":"true",
-                          "hide":{
-                            "hideWhenExpression":"pnc_art_initiation !== '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && pnc_art_initiation !== '160120AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
-                          },
                           "validators":[
 
                           ]

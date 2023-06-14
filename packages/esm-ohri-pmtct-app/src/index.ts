@@ -17,7 +17,6 @@ import {
   OHRIHome,
   OHRIWelcomeSection,
 } from '@ohri/openmrs-esm-ohri-commons-lib';
-import patientDashboardsConfig from "./namibia-esm-and-dashboards-config.json";
 
 const importTranslation = require.context('../translations', false, /.json$/, 'lazy');
 
@@ -45,7 +44,6 @@ function setupOpenMRS() {
     id: 'ArtSubmissionAction',
     load: () => import('./form-entry/post-submission-actions/art-linkage-action'),
   });
-  provide(patientDashboardsConfig);
 
   return {
     pages: [],

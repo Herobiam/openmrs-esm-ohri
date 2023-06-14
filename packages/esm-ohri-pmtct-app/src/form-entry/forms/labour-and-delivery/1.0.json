@@ -75,10 +75,12 @@
               "questionOptions": {
                 "concept": "6c45421e-2566-47cb-bbb3-07586fffbfe2",
                 "rendering": "text",
+                "usePreviousValueDisabled": "true",
                 "calculate": {
                   "calculateExpression": "client_booked == '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? myValue = useFieldValue('latest_anc_ptracker_number'): ''"
                 }
               },
+              "readonlyExpression": "client_booked == '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
               "behaviours":[
                 {
                   "intent":"*",
@@ -580,7 +582,10 @@
               "id": "art_start_date",
               "questionOptions": {
                 "concept": "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "date"
+                "rendering": "date",
+                "calculate": {
+                  "calculateExpression": "art_initiation == '160119AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? myValue = formatDate('latest_anc_art_start_date') : ''"
+                }
               },
               "behaviours":[
                 {
