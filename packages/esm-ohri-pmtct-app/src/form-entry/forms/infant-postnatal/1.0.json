@@ -891,5 +891,8 @@
     "uuid": "5022c5d7-ea45-47ce-bd65-1ba1d8ad2467",
     "referencedForms": [],
     "encounterType": "af1f1b24-d2e8-4282-b308-0bf79b365584",
-    "allowUnspecifiedAll": true
+    "allowUnspecifiedAll": true,
+    "formOptions": {
+      "usePreviousValueDisabled": "true"
+    }
   }

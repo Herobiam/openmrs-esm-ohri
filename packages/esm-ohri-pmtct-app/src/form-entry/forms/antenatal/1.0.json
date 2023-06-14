@@ -1022,5 +1022,8 @@
   "referencedForms":[],
   "encounterType":"2549af50-75c8-4aeb-87ca-4bb2cef6c69a",
   "postSubmissionActions": ["PTrackerSubmissionAction", "ArtSubmissionAction"],
-  "allowUnspecifiedAll":true
+  "allowUnspecifiedAll":true,
+  "formOptions": {
+    "usePreviousValueDisabled": "true"
+  }
 }

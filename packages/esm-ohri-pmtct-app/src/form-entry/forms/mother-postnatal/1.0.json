@@ -601,5 +601,8 @@
     "referencedForms":[],
     "encounterType":"269bcc7f-04f8-4ddc-883d-7a3a0d569aad",
     "postSubmissionActions": ["ArtSubmissionAction"],
-    "allowUnspecifiedAll":true
+    "allowUnspecifiedAll":true,
+    "formOptions": {
+      "usePreviousValueDisabled": "true"
+    }
  }
